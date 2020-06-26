@@ -1,0 +1,40 @@
+{
+    "name": "dazzlesoftware/console",
+    "type": "library",
+    "description": "Dazzle Console Package",
+    "keywords": ["dazzle", "framework", "console"],
+    "homepage": "https://github.com/dazzle-framework/console",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0",
+        "dazzlesoftware/application": "^1.0",
+        "dazzlesoftware/event": "^1.0",
+        "dazzlesoftware/string": "^1.0",
+        "symfony/console": "^3.4|^4.4|^5.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "psr/container": "^1.0"
+    },
+    "suggest": {
+        "psr/container-implementation": "To use the ContainerLoader"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Console\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Console\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
